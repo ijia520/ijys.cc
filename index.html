@@ -1,0 +1,219 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱家影视服务通知</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background: linear-gradient(135deg, #fff5f2 0%, #fffaf0 100%);
+            min-height: 100vh;
+            padding: 30px 20px;
+        }
+        .wrapper {
+            max-width: 780px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 50px 45px;
+            box-shadow: 0 10px 40px rgba(255, 122, 77, 0.12);
+            position: relative;
+            overflow: hidden;
+        }
+        .top-badge {
+            position: absolute;
+            top: 30px;
+            right: -50px;
+            background: #ff6b6b;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 6px 60px;
+            transform: rotate(45deg);
+            letter-spacing: 1px;
+        }
+        .main-title-box {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #ffe8e0;
+        }
+        .notice-tag {
+            display: inline-block;
+            background-color: #ff6b6b;
+            color: #fff;
+            padding: 6px 20px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 15px;
+            letter-spacing: 4px;
+        }
+        .main-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #2d3436;
+            letter-spacing: 2px;
+        }
+        .text-content {
+            font-size: 17px;
+            line-height: 2;
+            color: #4a4a4a;
+            margin-bottom: 35px;
+        }
+        .text-content p {
+            margin-bottom: 20px;
+            text-indent: 2em;
+        }
+        .content-title {
+            font-size: 20px;
+            font-weight: 500;
+            text-indent: 0 !important;
+            color: #2d3436;
+            margin-bottom: 25px !important;
+        }
+        .download-section {
+            background: linear-gradient(90deg, #fff7f3 0%, #ffefe8 100%);
+            border-radius: 16px;
+            padding: 35px 30px;
+            border-left: 6px solid #ff8a5c;
+        }
+        .section-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #ff6348;
+            margin-bottom: 25px;
+        }
+        .method-item {
+            display: flex;
+            align-items: center;
+            padding: 16px 0;
+            border-bottom: 1px solid #ffe2d9;
+            font-size: 17px;
+        }
+        .method-item:last-child {
+            border-bottom: none;
+        }
+        .method-num {
+            flex-shrink: 0;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: #ff8a5c;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            margin-right: 18px;
+        }
+        .method-text {
+            flex: 1;
+        }
+        .password-tag {
+            background-color: #fff;
+            padding: 6px 16px;
+            border-radius: 6px;
+            border: 1px dashed #ff8a5c;
+            font-weight: 600;
+            color: #ff6348;
+            margin-left: 10px;
+            letter-spacing: 2px;
+        }
+        .download-link {
+            color: #ff6348;
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 10px;
+            transition: all 0.3s ease;
+        }
+        .download-link:hover {
+            color: #e84b31;
+            text-decoration: underline;
+        }
+        .footer-tip {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+            color: #999;
+            padding-top: 25px;
+            border-top: 1px solid #f0f0f0;
+        }
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .wrapper {
+                padding: 40px 22px;
+            }
+            .main-title {
+                font-size: 24px;
+            }
+            .text-content {
+                font-size: 16px;
+            }
+            .download-section {
+                padding: 22px 18px;
+            }
+            .method-item {
+                flex-wrap: wrap;
+            }
+            .password-tag {
+                margin-top: 8px;
+                margin-left: 0;
+            }
+        }
+        /* 入场动画 */
+        .wrapper {
+            animation: fadeIn 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top-badge">重要通知</div>
+        <div class="main-title-box">
+            <span class="notice-tag">重要通知</span>
+            <h1 class="main-title">爱家影视已停止使用</h1>
+        </div>
+        <div class="text-content">
+            <p class="content-title">亲爱的家人们：</p>
+            <p>当你们看到这行字的时候，我们就要和大家暂别了。同行走过的这段日子里，每一次你们在后台的留言、每一条分享追剧喜悦的消息，我们都小心翼翼地珍藏在心底。要做出离开的决定，我们的心揪着疼，满满的全是舍不得——我们真的太爱一直陪着我们走到现在的你们了，也太舍不得这段大家一起热热闹闹追剧聊剧情的时光。</p>
+            <p>临走前我们翻遍了所有珍藏的资源，特意为大家整理了一批长期免费、运行稳定的实用软件，只想在没法继续陪你们走接下来的路的日子里，还能帮大家守住追剧自由的小快乐，不用再因为找资源、看片被收费弹窗扫了兴。</p>
+        </div>
+        <div class="download-section">
+            <h2 class="section-title">免费软件获取
+            <div class="method-item">
+                <div class="method-num">1</div>
+                <div class="method-text">小草口令：<span class="password-tag">CF6F</span></div>
+            </div>
+            <div class="method-item">
+                <div class="method-num">2</div>
+                <div class="method-text">蓝奏云网盘自取：<a href="https://wwbck.lanzn.com/s/free520" class="download-link" target="_blank">点击 进入</div>
+            </div>
+        </div>
+        <div class="footer-tip">
+            本页面仅用免费资源分享，所有资源均来自物联网。
+        </div>
+    </div>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"b3a002c1fe63446f8bd25604e9465afe","r":1,"spa":2}' crossorigin="anonymous"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"b3a002c1fe63446f8bd25604e9465afe","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
